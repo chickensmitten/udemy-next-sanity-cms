@@ -1,4 +1,5 @@
 
+
 import { Row, Col } from 'react-bootstrap';
 import PageLayout from 'components/PageLayout';
 import AuthorIntro from 'components/AuthorIntro';
@@ -21,6 +22,8 @@ export default function Home({blogs}) {
             <CardItem
               title={blog.title}
               subtitle={blog.subtitle}
+              date={blog.date}
+              image={blog.coverImage}
             />
           </Col>
           )
@@ -30,15 +33,13 @@ export default function Home({blogs}) {
   )
 }
 
-// This function is called during the build (build time)
-// Provides props to your page
-// It will create static page
 export async function getStaticProps() {
-  console.log('Calling getStaticProps');
+  const randomNumber = Math.random();
   const blogs = await getAllBlogs();
   return {
     props: {
-      blogs
+      blogs,
+      randomNumber
     }
   }
 }
