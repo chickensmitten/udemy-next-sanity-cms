@@ -11,6 +11,7 @@
   "dependencies": {
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.4.1",
+    "@sanity/image-url": "^1.0.1",
     "bootstrap": "^4.5.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",

@@ -17,6 +17,7 @@ SANITY_PROJECT_ID=YOUR_PROJECT_ID
 - `npm install --save @sanity/client`
 - `npm install --save @sanity/block-content-to-react`
 - `npm install --save highlight.js@10.0.3` must be this specific highlight for code highlight to work.
+- `npm install --save @sanity/image-url`
 
 ## Run
 - `npm start` for sanity studio app. then go to localhost 3333
