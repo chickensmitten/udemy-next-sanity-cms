@@ -12,6 +12,7 @@ SANITY_DATASET_NAME=YOUR_DATASET_NAME
 SANITY_PROJECT_ID=YOUR_PROJECT_ID
 ```
 - `npm install --save @sanity/client`
+- `npm install --save @sanity/code-input`
 
 ## Run
 - `npm start` for sanity studio app. then go to localhost 3333
