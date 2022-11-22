@@ -1,4 +1,7 @@
 # Sanity CMS with Next JS
+## Documentation
+- for documentation, head to [sanity.io/docs](https://sanity.io/docs)
+
 ## Setup
 - `npx create-next-app <app name>`
 - `npm install -g @sanity/cli`
@@ -12,7 +15,7 @@ SANITY_DATASET_NAME=YOUR_DATASET_NAME
 SANITY_PROJECT_ID=YOUR_PROJECT_ID
 ```
 - `npm install --save @sanity/client`
-- `npm install --save @sanity/code-input`
+- `npm install --save @sanity/block-content-to-react`
 
 ## Run
 - `npm start` for sanity studio app. then go to localhost 3333
