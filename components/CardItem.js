@@ -37,10 +37,8 @@ const CardItem = ({title, subtitle, image, date, author, link}) => {
         </Card.Body>
       </div>
       { link &&
-        <Link {...link}>
-          <a className="card-button">
-            Read More
-          </a>
+        <Link className="card-button" {...link}>
+          Read More
         </Link>
       }
     </Card>
