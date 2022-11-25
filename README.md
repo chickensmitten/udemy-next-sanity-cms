@@ -1,4 +1,8 @@
 # Sanity CMS with Next JS
+## Features 
+- Pagination
+- Switching view
+
 ## Documentation
 - for documentation, head to [sanity.io/docs](https://sanity.io/docs)
 
@@ -19,6 +23,7 @@ SANITY_PROJECT_ID=YOUR_PROJECT_ID
 - `npm install --save highlight.js@10.0.3` must be this specific highlight for code highlight to work.
 - `npm install --save @sanity/image-url`
 - `npm i @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons`
+- `npm i swr`
 
 ## Run
 - `npm start` for sanity studio app. then go to localhost 3333
