@@ -22,6 +22,7 @@
       `}
       </style>
 ```
+- When showing preview, in addition to sanity studio needing to pass secret and enable the api, cookies are needed to enable the preview, then when closing the preview, the cookies are removed.
 
 ## Setup
 - `npx create-next-app <app name>`
