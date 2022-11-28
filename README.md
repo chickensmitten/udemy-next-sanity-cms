@@ -11,7 +11,7 @@
 ## Documentation
 - for documentation, head to [sanity.io/docs](https://sanity.io/docs)
 - "next.config.js", "lib/api.js" and "/lib.sanity.js" is there you configure next js for sanity
-- First create theme context, then create theme provider to use theme context, then wrap theme provider in _app.js. Then in pagelayout, show the change with jsx global
+- First create theme context, then create theme provider to use theme context, then wrap theme provider in _app.js. Then in pagelayout, show the change with jsx global. Then install react-toggle and change the view.
 ```
       <style jsx global>{`
         html, body {

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const LIST_VIEW_ICONS = ['list', 'border-all'];
 const DATE_FILTERING_ICONS = ['sort-numeric-down', 'sort-numeric-up'];
 
-import { faList, faSun, faMoon, faBorderAll, faSortNumericDown, faSortNumericUp } from '@fortawesome/free-solid-svg-icons';
+import { faList, faBorderAll, faSortNumericDown, faSortNumericUp } from '@fortawesome/free-solid-svg-icons';
 
 const FilteringMenu = ({onChange, filter}) => {
 
