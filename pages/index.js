@@ -21,7 +21,7 @@ export default function Home({blogs, preview}) {
     isLoadingMore,
     isReachingEnd,
     loadMore
-  } = useGetBlogsPages({blogs, filter});
+  } = useGetBlogsPages({filter, blogs});
 
   return (
     <PageLayout>
@@ -45,7 +45,7 @@ export default function Home({blogs, preview}) {
           variant="outline-secondary">
           {isLoadingMore ? '...' : isReachingEnd ? 'No more blogs' : 'More Blogs'}
         </Button>
-      </div>      
+      </div>
     </PageLayout>
   )
 }
@@ -55,6 +55,7 @@ export async function getStaticProps({preview = false}) {
   return {
     props: {
       blogs, preview
-    }
+    },
+    revalidate: 1
   }
 }

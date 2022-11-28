@@ -37,7 +37,7 @@ const BlogDetail = ({blog, preview}) => {
             subtitle={blog.subtitle}
             coverImage={urlFor(blog.coverImage).height(600).url()}
             author={blog.author}
-            date={moment(blog.date).format('LLL')}
+            date={moment(blog.date).format('LL')}
           />
           <hr/>
           { blog.content &&
@@ -53,7 +53,8 @@ export async function getStaticProps({params, preview = false, previewData}) {
   // pass preview to getBlogBySlug and fetch draft blog
   const blog = await getBlogBySlug(params.slug, preview);
   return {
-    props: {blog, preview}
+    props: { blog, preview },
+    revalidate: 1
   }
 }
 
