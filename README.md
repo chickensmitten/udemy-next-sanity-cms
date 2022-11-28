@@ -11,7 +11,17 @@
 ## Documentation
 - for documentation, head to [sanity.io/docs](https://sanity.io/docs)
 - "next.config.js", "lib/api.js" and "/lib.sanity.js" is there you configure next js for sanity
-- First create theme context, then create theme provider to use theme context, then wrap theme provider in _app.js
+- First create theme context, then create theme provider to use theme context, then wrap theme provider in _app.js. Then in pagelayout, show the change with jsx global
+```
+      <style jsx global>{`
+        html, body {
+          background: ${theme.background};
+          color: ${theme.fontColor};
+          transition: color 0.2s ease-out 0s, background 0.2s ease-out 0s;
+        }
+      `}
+      </style>
+```
 
 ## Setup
 - `npx create-next-app <app name>`
@@ -33,6 +43,7 @@ SANITY_PROJECT_ID=YOUR_PROJECT_ID
 - `npm i swr` // this uses old swr version "swr": "^0.2.2"
 - pagination with SWR. Go to SWR github repo.
 - `npm install moment`
+- `npm install react-toggle`
 
 ## Run
 - `npm start` for sanity studio app. then go to localhost 3333
