@@ -4,14 +4,14 @@
 - Pagination
 - Sorting
 - Switching tile to list view
-- Changing background colours
+- Changing background colours with `createContext`
 - Changing fonts
 - Preview edited content before publishing
 
 ## Documentation
 - for documentation, head to [sanity.io/docs](https://sanity.io/docs)
-- "lib/api.js" and "/lib.sanity.js" is there you configure next js for sanity
-- "next.config.js" too
+- "next.config.js", "lib/api.js" and "/lib.sanity.js" is there you configure next js for sanity
+- First create theme context, then create theme provider to use theme context, then wrap theme provider in _app.js
 
 ## Setup
 - `npx create-next-app <app name>`
