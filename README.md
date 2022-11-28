@@ -1,10 +1,17 @@
 # Sanity CMS with Next JS
+**This pairs with `udemy-next-sanity-studio-cms` github repo**
 ## Features 
 - Pagination
-- Switching view
+- Sorting
+- Switching tile to list view
+- Changing background colours
+- Changing fonts
+- Preview edited content before publishing
 
 ## Documentation
 - for documentation, head to [sanity.io/docs](https://sanity.io/docs)
+- "lib/api.js" and "/lib.sanity.js" is there you configure next js for sanity
+- "next.config.js" too
 
 ## Setup
 - `npx create-next-app <app name>`
@@ -25,6 +32,7 @@ SANITY_PROJECT_ID=YOUR_PROJECT_ID
 - `npm i @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons`
 - `npm i swr` // this uses old swr version "swr": "^0.2.2"
 - pagination with SWR. Go to SWR github repo.
+- `npm install moment`
 
 ## Run
 - `npm start` for sanity studio app. then go to localhost 3333
